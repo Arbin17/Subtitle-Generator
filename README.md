@@ -1,4 +1,4 @@
-# 🎬 YouTube Subtitle Generator
+# 🎬 Subtitle Generator
 
 Generate `.srt` subtitles from **YouTube videos** or **uploaded video/audio files** using OpenAI Whisper + FastAPI.
 
