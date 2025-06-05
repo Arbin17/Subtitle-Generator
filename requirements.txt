@@ -1,0 +1,10 @@
+fastapi 
+uvicorn
+openai-whisper 
+ffmpeg-python 
+srt
+jinja2 
+python-multipart 
+aiofiles
+yt-dlp 
+ffmpeg

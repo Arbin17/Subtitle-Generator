@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Subtitle Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 40px; }
+        input, button, textarea { width: 100%; padding: 10px; margin-top: 10px; font-size: 16px; }
+        textarea { height: 300px; }
+    </style>
+</head>
+<body>
+    <h1>YouTube Subtitle Generator</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="youtube_url" placeholder="Enter YouTube video URL">
+        <p style="text-align:center;">OR</p>
+        <input type="file" name="video_file" accept="video/*,audio/*">
+        <button type="submit">Generate Subtitles</button>
+    </form>
+
+    {% if srt_text %}
+        <textarea readonly>{{ srt_text }}</textarea>
+        {% if download_url %}
+            <a href="{{ download_url }}">
+                <button type="button">Download .srt File</button>
+            </a>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
